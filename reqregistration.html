@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Placement Portal</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #4568dc, #b06ab3);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .register-container {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 350px;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="submit"] {
+      background: #4568dc;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background: #b06ab3;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .login-link {
+      display: block;
+      margin-top: 10px;
+      color: #666;
+      text-decoration: none;
+    }
+    .login-link:hover {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-container">
+    <h2>Register</h2>
+    <form action="/register" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Register">
+      <a href="reqlogin.html" class="login-link">Already have an account? Login</a>
+    </form>
+  </div>
+
+</body>
+</html>

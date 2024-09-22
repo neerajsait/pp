@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+            color: #333;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #3a86ff;
+            padding: 15px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #e9ecef;
+        }
+
+        /* Container Styles */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3a86ff;
+            padding-bottom: 10px;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3a86ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .resume-download {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .download-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .resume-download a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .resume-download span {
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #3a86ff;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+
+        .certification {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 4px solid #3a86ff;
+            border-radius: 5px;
+        }
+
+        .footer {
+            border-top: 2px solid #3a86ff;
+            padding-top: 10px;
+            margin-top: 30px;
+            color: #333;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #3a86ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Student Portal</h1>
+        <div class="navbar-links">
+            <a href="home.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="postjob.html">Post a Job</a>
+            <a href="reports.html">Reports</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="header">
+            <div class="profile-info">
+                <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+                <div class="resume-download">
+                    <a href="resume.pdf" download>
+                        <img src="download-icon.png" alt="Download Resume" class="download-icon">
+                        <span>Resume.pdf</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section class="personal-info">
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> Neha Sharma</p>
+            <p><strong>Age:</strong> 23</p>
+            <p><strong>Date of Birth:</strong> April 15, 2001</p>
+            <p><strong>Place of Birth:</strong> Delhi, India</p>
+            <p><strong>Address:</strong> 45 Sector 3, Dwarka, New Delhi, 110075</p>
+            <p><strong>Country:</strong> India</p>
+        </section>
+
+        <section class="study-details">
+            <h2>Study Details</h2>
+            <h3>10th Grade</h3>
+            <p><strong>School Name:</strong> Modern Public School, Delhi</p>
+            <p><strong>Year of Passing:</strong> 2017</p>
+            <p><strong>Percentage/Grade:</strong> 92%</p>
+
+            <h3>Intermediate (12th Grade)</h3>
+            <p><strong>School Name:</strong> St. Xavier's Senior Secondary School, Delhi</p>
+            <p><strong>Year of Passing:</strong> 2019</p>
+            <p><strong>Percentage/Grade:</strong> 94%</p>
+
+            <h3>Bachelor’s Degree (B.Sc)</h3>
+            <p><strong>University/College Name:</strong> University of Delhi</p>
+            <p><strong>Specialization:</strong> Mathematics</p>
+            <p><strong>Year of Passing:</strong> 2022</p>
+            <p><strong>CGPA/Percentage:</strong> 9.1 CGPA</p>
+
+            <h3>Master’s Degree (M.Sc)</h3>
+            <p><strong>University/College Name:</strong> Indian Institute of Science Education and Research, Pune</p>
+            <p><strong>Specialization:</strong> Data Analytics</p>
+            <p><strong>Year of Passing:</strong> 2024</p>
+            <p><strong>CGPA/Percentage:</strong> 9.3 CGPA</p>
+        </section>
+
+        <section class="hobbies-interests">
+            <h2>Hobbies & Interests</h2>
+            <p><strong>Hobbies:</strong> Painting, Traveling, Yoga</p>
+            <p><strong>Interests:</strong> Data Science, Big Data Analytics</p>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <div class="certification">
+                <p><strong>Name:</strong> Google Data Analytics Professional Certificate</p>
+                <p><strong>Issuing Organization:</strong> Google</p>
+                <p><strong>Date of Issue:</strong> July 2023</p>
+            </div>
+            <div class="certification">
+                <p><strong>Name:</strong> Microsoft Certified: Azure AI Fundamentals</p>
+                <p><strong>Issuing Organization:</strong> Microsoft</p>
+                <p><strong>Date of Issue:</strong> May 2023</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <p><strong>Technical Skills:</strong> R, Python, SQL, Power BI</p>
+            <p><strong>Soft Skills:</strong> Leadership, Critical Thinking, Team Management</p>
+        </section>
+
+        <footer class="footer">
+            <p><strong>Contact Information:</strong> neha.sharma@example.com, +91 91234 56789</p>
+            <p><strong>Social Media Links:</strong> <a href="https://www.linkedin.com/in/nehasharma" target="_blank">LinkedIn</a>, <a href="https://twitter.com/nehasharma" target="_blank">Twitter</a></p>
+        </footer>
+    </div>
+</body>
+</html>

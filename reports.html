@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Placement Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #3a86ff;
+            padding: 15px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #e9ecef;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #3a86ff;
+        }
+        .report-summary, .report-table {
+            margin-top: 30px;
+        }
+        .report-summary {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .report-summary h2 {
+            margin-top: 0;
+        }
+        .report-table {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #3a86ff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Placement Portal</h1>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="postjob.html">Post a Job</a>
+            <a href="reports.html">Reports</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Reports</h1>
+
+        <!-- Report Summary -->
+        <div class="report-summary">
+            <h2>Summary</h2>
+            <p><strong>Total Jobs Posted:</strong> 15</p>
+            <p><strong>Total Applications Received:</strong> 120</p>
+            <p><strong>Active Job Listings:</strong> 10</p>
+        </div>
+
+        <!-- Detailed Report Table -->
+        <div class="report-table">
+            <h2>Detailed Report</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Job Title</th>
+                        <th>Applications Received</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-09-10</td>
+                        <td>Software Engineer</td>
+                        <td>35</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>2024-09-12</td>
+                        <td>Data Analyst</td>
+                        <td>45</td>
+                        <td>Closed</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

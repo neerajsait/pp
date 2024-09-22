@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Home - Placement Portal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        /* Navbar Styles */
+        .navbar {
+            background-color: #3a86ff;
+            padding: 15px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #e9ecef;
+        }
+        .navbar .menu {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .menu a {
+            margin-left: 20px;
+        }
+        /* Container Styles */
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #3a86ff;
+            margin-top: 0;
+            font-size: 2.5em;
+        }
+        .dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .box {
+            flex: 1;
+            min-width: 280px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .navigation-box a {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ff6f61;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .navigation-box a:hover {
+            background-color: #ff4a43;
+            transform: scale(1.05);
+        }
+        .stats, .recent-activities, .notifications, .reports, .posted-jobs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .stat-item, .activity-item, .notification-item, .job-item {
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .stat-item h3, .activity-item h3, .notification-item h3, .job-item h3 {
+            font-size: 1.2em;
+            color: #3a86ff;
+        }
+        .job-item p {
+            margin: 5px 0;
+        }
+        .job-item .job-info {
+            margin-top: 10px;
+        }
+        .job-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Placement Portal</h1>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="applications.html">Applications</a>
+            <a href="postjob.html">Post a Job</a>
+            <a href="reports.html">Reports</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1>Recruiter Dashboard</h1>
+
+        <div class="dashboard">
+            <!-- View Applications Navigation -->
+            <section class="box">
+                <h2>View Applications</h2>
+                <div class="navigation-box">
+                    <a href="applications.html">Go to Applications</a>
+                </div>
+            </section>
+
+            <!-- Post Jobs Navigation -->
+            <section class="box">
+                <h2>Post a Job</h2>
+                <div class="navigation-box">
+                    <a href="post_job.html">Go to Jobs </a>
+                </div>
+            </section>
+
+            <!-- Job Statistics -->
+            <section class="box stats">
+                <div class="stat-item">
+                    <h3>Total Jobs Posted</h3>
+                    <p>15</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Applications Received</h3>
+                    <p>120</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Active Job Listings</h3>
+                    <p>10</p>
+                </div>
+            </section>
+
+            <!-- Recent Activities -->
+            <section class="box recent-activities">
+                <div class="activity-item">
+                    <h3>Recent Job Post: Software Developer</h3>
+                    <p>Posted on 2024-09-10</p>
+                </div>
+                <div class="activity-item">
+                    <h3>Recent Application: John Doe</h3>
+                    <p>Applied for Software Developer on 2024-09-12</p>
+                </div>
+            </section>
+
+            <!-- Notifications -->
+            <section class="box notifications">
+                <div class="notification-item">
+                    <h3>New Application Alert</h3>
+                    <p>Babbu Doe has applied for Software Developer.</p>
+                </div>
+                <div class="notification-item">
+                    <h3>Upcoming Deadline</h3>
+                    <p>Job posting for Graphic Designer ends in 2 days.</p>
+                </div>
+            </section>
+
+            <!-- Reports -->
+            <section class="box reports">
+                <h2>Reports and Analytics</h2>
+                <div class="navigation-box">
+                    <a href="reports.html">View Reports</a>
+                </div>
+            </section>
+
+            <!-- Jobs Posted by Recruiter -->
+            <section class="box posted-jobs">
+                <h2>Jobs Posted by You</h2>
+                <div class="job-item">
+                    <h3>Software Developer</h3>
+                    <div class="job-info">
+                        <p><strong>Date Posted:</strong> 2024-09-01</p>
+                        <p><strong>Status:</strong> Active</p>
+                        <p><strong>Location:</strong> Delhi, India</p>
+                        <p><strong>Job Type:</strong> Full-time</p>
+                    </div>
+                </div>
+                <div class="job-item">
+                    <h3>Data Analyst</h3>
+                    <div class="job-info">
+                        <p><strong>Date Posted:</strong> 2024-08-25</p>
+                        <p><strong>Status:</strong> Closed</p>
+                        <p><strong>Location:</strong> Hyderabad, India</p>
+                        <p><strong>Job Type:</strong> Contract</p>
+                    </div>
+                </div>
+                <!-- Add more job items dynamically here -->
+            </section>
+        </div>
+    </main>
+</body>
+</html>
